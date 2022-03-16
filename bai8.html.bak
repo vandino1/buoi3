@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bài 8</title>
+		<meta charset="utf-8" />
+		<style>
+			body {
+				font-family: Tahoma;
+				font-size: 11pt;
+			}
+			select {
+				font-size: 11pt;
+				width: 100px;
+				padding: 2px;
+			}
+		</style>
+	</head>
+	<body>
+		<script>
+			function doimaunen(){
+				document.body.style.backgroundColor = f.optnen.value;
+			}
+			function doimauchu(){
+				document.body.style.color = f.optchu.value;
+			}
+		</script>
+		<h1>Đổi màu nền và màu chữ</h1>
+		<form name="f">
+			<table>
+				<tr>
+					<td>Chọn màu nền</td>
+					<td>
+						<select name="optnen" onchange = "doimaunen()">
+							<option value="white">White</option>
+							<option value="Pink">Pink</option>
+							<option value="lightblue">lightblue</option>
+							<option value="lightgreen">lightgreen</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Chọn màu chữ</td>
+					<td>
+						<select name="optchu" onchange = "doimauchu()">
+							<option value="black">Black</option>
+							<option value="Red">Red</option>
+							<option value="Blue">Blue</option>
+							<option value="Green">Green</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

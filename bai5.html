@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bài 5</title>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+	<!--
+	Ý tưởng: Xây dựng 1 hàm  thời gian
+	Cứ 1 giây thì gọi hàm đó 1 lần -->
+		<div id="HienThi">
+
+		</div>
+		<script>
+			function thoigian(){
+				var tg = new Date();
+				var gio = tg.getHours();
+				var phut = tg.getMinutes();
+				var giay = tg.getSeconds();
+				/*document.write('bây giờ là '+gio+' giờ  '+phut+'phút '+giay+'giây')
+				*/
+				document.getElementById('HienThi').innerHTML = 'Bây giờ là ' + gio + ': ' + phut + ': ' + giay
+			}
+			setInterval(thoigian,1000)
+			thoigian();
+		
+				
+		</script>
+	</body>
+</html>

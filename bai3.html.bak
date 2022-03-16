@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bài 3</title>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<script>
+			var hientai = new Date();
+			var ngay = hientai.getDate();// 1-31
+			var thang = hientai.getMonth() +1 ;// 0-11
+			var nam = hientai.getFullYear();
+			document.write('Hôm ngay ngày ' +ngay+ ' tháng ' +thang+ ' năm ' +nam);
+		</script>
+	</body>
+</html>
